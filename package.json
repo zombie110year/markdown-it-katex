@@ -4,8 +4,7 @@
   "description": "Fast math support for markdown-it with KaTeX",
   "main": "index.js",
   "scripts": {
-    "watch": "watchify browser.js -o bundle.js -v",
-    "test": "node test/all.js"
+    "watch": "watchify browser.js -o bundle.js -v"
   },
   "repository": {
     "type": "git",
@@ -30,6 +29,8 @@
   "devDependencies": {
     "markdown-it": "^10.0.0",
     "markdown-it-testgen": "^0.1.6",
-    "tape": "^4.13.0"
+    "tape": "^4.13.0",
+    "watchify": "^3.11.1",
+    "yarn": "^1.22.0"
   }
 }

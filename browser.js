@@ -1,18 +1,12 @@
-var md = require('markdown-it')(),
-	mk = require('./index');
-
+const md = require('markdown-it')();
+const mk = require('./index');
 md.use(mk);
-
-var input = document.getElementById('input'),
-	output = document.getElementById('output'),
-	button = document.getElementById('button');
-
-button.addEventListener('click', function(ev){
-
-	var result = md.render(input.value);
-
-	output.innerHTML = result;
-
+const input = document.getElementById('input');
+const output = document.getElementById('output');
+const button = document.getElementById('button');
+button.addEventListener('click', function (ev) {
+  let result = md.render(input.value);
+  output.innerHTML = result;
 });
 
 /*
