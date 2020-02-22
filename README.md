@@ -1,8 +1,8 @@
 # markdown-it-katex
 
-Add Math to your Markdown
+> upgrade KaTeX to v 0.11.1
 
-[![Build Status](https://travis-ci.org/waylonflinn/markdown-it-katex.svg?branch=master)](https://travis-ci.org/waylonflinn/markdown-it-katex)
+Add Math to your Markdown
 
 [KaTeX](https://github.com/Khan/KaTeX) is a faster alternative to MathJax. This plugin makes it easy to support in your markdown.
 
@@ -20,27 +20,31 @@ npm install markdown-it
 Install the plugin
 
 ```
-npm install markdown-it-katex
+npm install @zombie110year/markdown-it-katex
 ```
 
 Use it in your javascript
 
 ```javascript
-var md = require('markdown-it')(),
-    mk = require('markdown-it-katex');
+let md = require('markdown-it')();
+let mk = require('markdown-it-katex');
 
 md.use(mk);
 
 // double backslash is required for javascript strings, but not html input
-var result = md.render('# Math Rulez! \n  $\\sqrt{3x-1}+(1+x)^2$');
+let result = md.render('# Math Rulez! \n  $\\sqrt{3x-1}+(1+x)^2$');
 ```
 
 Include the KaTeX stylesheet in your html:
+
+> keep the css's version equals to KaTeX's.
+
 ```html
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css">
 ```
 
 If you're using the default markdown-it parser, I also recommend the [github stylesheet](https://github.com/sindresorhus/github-markdown-css):
+
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/github-markdown-css/2.2.1/github-markdown.css"/>
 ```
@@ -92,3 +96,14 @@ KaTeX is based on TeX and LaTeX. Support for both is growing. Here's a list of
 currently supported functions:
 
 [Function Support in KaTeX](https://github.com/Khan/KaTeX/wiki/Function-Support-in-KaTeX)
+
+# Preview
+
+In this project, run:
+
+```sh
+yarn install
+yarn run watch
+```
+
+and open the index.html to preview.
