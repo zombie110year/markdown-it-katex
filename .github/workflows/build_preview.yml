@@ -17,7 +17,5 @@ jobs:
       - run: yarn run build:preview
       - name: GitHub Pages Deploy
         uses: maxheld83/ghpages@v0.2.1
-        secrets:
-          GH_PAT: ${{ secrets.GH_PAT }}
         env:
           BUILD_DIR: .
