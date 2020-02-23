@@ -4,7 +4,7 @@
   "description": "Fast math support for markdown-it with KaTeX",
   "main": "index.js",
   "scripts": {
-    "watch": "watchify browser.js -o bundle.js -v"
+    "build:preview": "browserify browser.js -o bundle.js -v"
   },
   "repository": {
     "type": "git",
@@ -29,10 +29,10 @@
   "devDependencies": {
     "@types/katex": "^0.11.0",
     "@types/markdown-it": "^0.0.9",
+    "browserify": "^16.5.0",
     "markdown-it": "^10.0.0",
     "markdown-it-testgen": "^0.1.6",
     "tape": "^4.13.0",
-    "watchify": "^3.11.1",
     "yarn": "^1.22.0"
   }
 }
