@@ -1,7 +1,10 @@
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     #input {
       display: block;
@@ -10,17 +13,20 @@
       padding-left: 0.1em;
       font-family: monospace;
     }
+
     #button {
       margin-top: 1em;
       width: 120px;
       height: 50px;
       font-size: 14pt;
     }
+
     #output {
       margin: 20px;
     }
   </style>
 </head>
+
 <body>
   <textarea id="input" type="textarea" rows=15, cols=80 spellcheck="false">
 # Maxwell's Equations
@@ -37,3 +43,5 @@ $\nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\p
   <div id="output" class="markdown-body"></div>
   <script src="./bundle.js"></script>
 </body>
+
+</html>
