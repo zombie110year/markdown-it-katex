@@ -1,6 +1,6 @@
 # markdown-it-katex
 
-> upgrade KaTeX to v 0.11.1
+> fork from waylonflinn/markdown-it-katex, upgrade KaTeX to v 0.11.1
 
 Add Math to your Markdown
 
@@ -103,7 +103,7 @@ In this project, run:
 
 ```sh
 yarn install
-yarn run watch
+yarn run build:preview
 ```
 
 and open the index.html to preview.
